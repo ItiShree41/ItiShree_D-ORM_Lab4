@@ -35,7 +35,7 @@ foreign key (pro_id) references product(pro_id),
 foreign key (supp_id) references supplier(supp_id)
 );
 
-create table if not exists `order`(
+create table if not exists orders (
 ord_id int primary key,
 ord_amount int not null,
 ord_date date not null,
