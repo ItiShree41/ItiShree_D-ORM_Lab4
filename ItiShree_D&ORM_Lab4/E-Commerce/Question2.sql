@@ -49,5 +49,5 @@ create table if not exists rating(
 rat_id int primary key,
 ord_id int,
 rat_ratstars int not null,
-foreign key (ord_id) references `order`(ord_id)
+foreign key (ord_id) references orders(ord_id)
 );
