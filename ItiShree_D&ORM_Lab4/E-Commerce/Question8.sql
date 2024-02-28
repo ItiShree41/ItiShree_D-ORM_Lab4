@@ -5,7 +5,7 @@ where pro_id = any(
 	from supplier_pricing
 	where pricing_id = any(
 		select pricing_id
-		from `order`
+		from orders
 		where ord_date>"2021-10-05"
 	)
 );
